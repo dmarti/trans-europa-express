@@ -1,6 +1,6 @@
-Be a virtual European. Proxy all your third-party web trackers through Europe.
+Be a virtual European.
 
-This is a second level of defense for when a site won't work for whatever reason without a third-party resource.
+This is a second level of defense for when a site won't work for whatever reason without a third-party tracker.  If a site gives you grief for running an ad blocker even when you're not, or if they didn't test properly with tracking blocked, then this is a way to let the trackers through, by way of Europe.
 
 Install one of these browser add-ons first.
 
@@ -8,7 +8,7 @@ Install one of these browser add-ons first.
 
  * [Privacy Badger](https://www.eff.org/privacybadger)
 
-Then if you have to turn your primary privacy tool off, you're still making connections to the creepy surveillance sites through Europe where they have Internet privacy regulations and stuff.
+One of those tools will save you the most bandwidth and give you the best protection. Then if you are willing to turn your primary privacy tool off for some site, you're still making connections to creepy third-party surveillance sites through Europe where they have Internet privacy regulations and stuff.
 
 
 ## How to use it
@@ -32,12 +32,19 @@ Remember the URL from this step.  (It ends in `wpad.dat`
 
  6. Select "Automatic proxy configuration URL" and fill in the URL from step 3.
 
- 7. Enjoy your virtual European web tracking experience.
+ 7. Enjoy your virtual European web experience.
 
 
-## protip: Act more European in order to avoid raising suspicion
+## protip: Act more European to blend in
 
  * [Listen to Kraftwerk](https://www.youtube.com/watch?v=XMVokT5e0zs).
 
  * Eat smaller amounts of higher-quality cheese.
+
+ * Support sensible web privacy policy.
+
+
+## Future
+
+This should really be a WebExtension.
 
