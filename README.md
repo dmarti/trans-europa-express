@@ -1,6 +1,31 @@
-Be a virtual European.
+# trans-europa-express
 
-This is a second level of defense for when a site won't work for whatever reason without a third-party tracker.  If a site gives you grief for running an ad blocker even when you're not, or if they didn't test properly with tracking blocked, then this is a way to let the trackers through, by way of Europe.
+Bonjour!
+
+This is a browser extension to find and run the
+JavaScript that sites use to detect whether or not
+you're European, so that you get better better privacy
+by default.
+
+**Step 1:** Find web sites that have special JavaScript that gives Europeans extra privacy rights because #GDPR.
+
+**Step 2:** Set off the European detector.
+
+**Step 3:** Enjoy virtual European status. Alles in Ordnung.
+
+
+## Install from addons.mozilla.org
+
+Coming soon.
+
+
+## Testing locally
+
+Install [web-ext](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Getting_started_with_web-ext) and run with:
+
+```
+web-ext run
+```
 
 Install one of these browser add-ons first.
 
@@ -8,43 +33,6 @@ Install one of these browser add-ons first.
 
  * [Privacy Badger](https://www.eff.org/privacybadger)
 
-One of those tools will save you the most bandwidth and give you the best protection. Then if you are willing to turn your primary privacy tool off for some site, you're still making connections to creepy third-party surveillance sites through Europe where they have Internet privacy regulations and stuff.
 
-
-## How to use it
-
- 1. Get a VPS in Europe.
-
- 2. Check the IP address and make sure that you can log in as root.
-
- 3. Run "make". `HOST` should be the IP address of your VPS from step 2.
-
-```sh
-make HOST=192.168.42.42
-```
-
-Remember the URL from this step.  (It ends in `wpad.dat`
-
-
- 4. Go to your Firefox preferences, select "Advanced" on the left, "Network" on the top.
-
- 5. Click the "Settings" button to the right of "Connection".
-
- 6. Select "Automatic proxy configuration URL" and fill in the URL from step 3.
-
- 7. Enjoy your virtual European web experience.
-
-
-## protip: Act more European to blend in
-
- * [Listen to Kraftwerk](https://www.youtube.com/watch?v=XMVokT5e0zs).
-
- * Eat smaller amounts of higher-quality cheese.
-
- * Support sensible web privacy policy.
-
-
-## Future
-
-This should really be a WebExtension.
+(name source: [Kraftwerk](https://en.wikipedia.org/wiki/Trans-Europe_Express_(album)))
 
