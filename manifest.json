@@ -1,8 +1,8 @@
 {
   "description": "Unlock virtual European status",
   "manifest_version": 2,
-  "name": "trans-europa-express",
-  "version": "1.0",
+  "name": "Trans Europa Express",
+  "version": "0.1",
   "homepage_url": "https://blog.aloodo.org/",
   "icons": {
     "48": "icons/cheese.png"

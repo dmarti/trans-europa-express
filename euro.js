@@ -1,10 +1,12 @@
 window.addEventListener('load', function() {
-	if (window.hasOwnProperty('googletag') {
-		alert("Found googletag.");
-		if (googletag.hasOwnProperty('setRequestNonPersonalizedAds')) {
-			console.log("googletag present and allows setting non-personalized ads. Euro-powers, activate!");
-			googletag.pubads().setRequestNonPersonalizedAds(1)
-		}
+	// put Aloodo into "European mode".  (For pre-#GDPR testing.)
+	if ( window.eval('aloodo') && (window.eval('typeof(aloodo.setEuropeanMode)') == 'function')) {
+		window.eval('aloodo.setEuropeanMode(true)');
 	}
-}
+	
+	if (window.eval('googletag')) {
+		console.log("googletag present.  Attempting to set non-personalized ads.");
+		window.eval('googletag.pubads().setRequestNonPersonalizedAds(1)');
+	}
+});
 
