@@ -2,3 +2,4 @@
 *.pyc
 services.json
 europe.pac
+web-ext-artifacts/
