@@ -2,8 +2,8 @@
   "description": "Unlock virtual European status by setting non-personalized web adverising options.",
   "manifest_version": 2,
   "name": "Trans Europa Express",
-  "version": "0.1",
-  "homepage_url": "https://blog.aloodo.org/",
+  "version": "0.2",
+  "homepage_url": "https://blog.zgp.org/unlocking-the-hidden-european-mode-in-web-ads/",
   "icons": {
     "48": "icons/cheese.png"
   },
