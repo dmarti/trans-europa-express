@@ -11,7 +11,9 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["euro.js"]
+      "js": ["euro.js"],
+      "all_frames": true,
+      "run_at": "document_start"
     }
   ]
 
