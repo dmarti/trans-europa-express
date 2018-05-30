@@ -1,24 +1,35 @@
-window.addEventListener('load', function() {
+(function(){
+	// Try 20 times/s for 3 s
+	var retryTimeout = 50;
+	var attempts = 60;
 	console.log("Content script euro.js starting.");
 
-	// put Aloodo into "European mode".  (For pre-#GDPR testing.)
-	if ( window.hasOwnProperty('aloodo')) {
-		window.eval('aloodo.setEuropeanMode(true)');
-	}
-	
-	if (window.hasOwnProperty('googletag')) {
-		console.log("googletag present.  Attempting to set non-personalized ads.");
-		window.eval('googletag.pubads().setRequestNonPersonalizedAds(1)');
-	}
+	function insistOnEuropeanitude(attempts) {
+		var wW = window.wrappedJSObject;
 
-	if (window.hasOwnProperty('ga')) {
-		console.log("Google Analytics present. Setting anonymizeIp to true and disabling Advertising Reporting Features.");
-		window.eval("window.ga('set', 'anonymizeIp', true)");
-		window.eval("window.ga('set', 'displayFeaturesTask', null)");
-	} else {
-		console.log('no window.ga present');
-	}
+		// put Aloodo into "European mode". 
+		if ('aloodo' in wW) {
+			wW.aloodo.setEuropeanMode(true);
+			console.log("Aloodo in European mode");
+		}
 	
+		if ('googletag' in wW) {
+			console.log("googletag present.  Attempting to set non-personalized ads.");
+			wW.googletag.pubads().setRequestNonPersonalizedAds(1);
+		} 
+
+		if ('ga' in wW) {
+			wW.ga('set', 'anonymizeIp', true);
+			wW.ga('set', 'displayFeaturesTask', null);
+			console.log("ga options set");
+		} 
+		
+		if (attempts) {
+			setTimeout(insistOnEuropeanitude, retryTimeout, attempts -1);
+			return;
+		}
+	}
+	insistOnEuropeanitude(attempts - 1);
 	console.log("Content script euro.js ending.");
-});
+})();
 
