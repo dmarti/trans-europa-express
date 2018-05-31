@@ -14,6 +14,12 @@
       "js": ["euro.js"],
       "all_frames": true,
       "run_at": "document_start"
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dom_loaded.js"],
+      "all_frames": true,
+      "run_at": "document_end"
     }
   ]
 

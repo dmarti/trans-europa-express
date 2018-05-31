@@ -34,6 +34,13 @@ Install [web-ext](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Gett
 web-ext run
 ```
 
+## Example pages
+
+Example page with "adsbygoogle":  https://www.modpagespeed.com/examples/make_show_ads_async.html?ModPagespeed=on&ModPagespeedFilters=make_show_ads_async
+
+
+## Misc
+
 (Name borrowed from
 [Kraftwerk](https://en.wikipedia.org/wiki/Trans-Europe_Express_(album)).
 The only way to get a song unstuck from
