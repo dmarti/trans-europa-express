@@ -1,5 +1,4 @@
 (function(){
-	// Try 20 times/s for 5 s
 	var retryTimeout = 50;
 	var attempts = 100;
 	var europeanStuffDone = {};
