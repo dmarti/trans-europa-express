@@ -14,6 +14,14 @@
 			europeanStuffDone['aloodo'] = true;
 		}
 
+		// Facebook pixel
+		// https://developers.facebook.com/docs/facebook-pixel/implementation/gdpr
+		if ('fbq' in wW && !europeanStuffDone.hasOwnProperty('fbq')) {
+			wW.fbq('consent', 'revoke');
+			console.log("fbq present.  Called revoke.");
+			europeanStuffDone['fbq'] = true;
+		}
+
 		// Google Tag Manager
 		if ('googletag' in wW && !europeanStuffDone.hasOwnProperty('googletag')) {
 			wW.googletag.pubads().setRequestNonPersonalizedAds(1);
